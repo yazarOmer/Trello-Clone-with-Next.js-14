@@ -1,4 +1,5 @@
 import { Header } from "../_components/header";
+import { Sidebar } from "../_components/sidebar";
 
 export default function OrgIdLayout({
   children,
@@ -10,9 +11,12 @@ export default function OrgIdLayout({
   };
 }) {
   return (
-    <div>
+    <main className="h-[calc(100vh-64px)]">
       <Header orgId={params.orgId} />
-      {children}
-    </div>
+      <div className="h-full flex">
+        <Sidebar orgId={params.orgId} />
+        <div className="w-full h-full">{children}</div>
+      </div>
+    </main>
   );
 }
