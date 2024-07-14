@@ -4,6 +4,7 @@ import { getBoards } from "@/data/board";
 import { getOrganizationById } from "@/data/organization";
 import { Board } from "@prisma/client";
 import { FaRegBuilding } from "react-icons/fa";
+import { BoardCard } from "../_components/board-card";
 
 export default async function OrgIdPage({
   params,
@@ -26,7 +27,7 @@ export default async function OrgIdPage({
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
         {boards?.map((board: Board) => (
-          <p key={board.id}>{board.title}</p>
+          <BoardCard key={board.id} data={board} orgId={params.orgId} />
         ))}
         <FormPopover side="right" sideOffset={10}>
           <div
