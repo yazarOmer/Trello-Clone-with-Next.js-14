@@ -20,7 +20,7 @@ export const NavItem = ({ org, orgId }: NavItemProps) => {
     {
       id: 1,
       name: "Boards",
-      href: `/organization/${org.id}/board`,
+      href: `/organization/${org.id}`,
       icon: <FiLayout size={18} className="text-zinc-700" />,
     },
     {

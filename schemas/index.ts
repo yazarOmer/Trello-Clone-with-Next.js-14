@@ -26,3 +26,13 @@ export const OrganizationSchema = z.object({
         message: "Organization name is required"
     })
 })
+
+export const BoardSchema = z.object({
+    title: z.string().min(1, {
+        message: "Title is required"
+    }),
+    orgId: z.string(),
+    image: z.string({
+        required_error: "Image is required",
+    })
+})
