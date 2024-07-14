@@ -8,6 +8,7 @@ import { Organization } from "@prisma/client";
 import Link from "next/link";
 import { FcOrganization } from "react-icons/fc";
 import { FiLayout, FiActivity } from "react-icons/fi";
+import { FaRegBuilding } from "react-icons/fa";
 
 interface NavItemProps {
   org: Organization;
@@ -33,7 +34,9 @@ export const NavItem = ({ org, orgId }: NavItemProps) => {
   return (
     <AccordionItem value={org.id} className="border-none">
       <AccordionTrigger className="hover:no-underline text-base font-medium hover:bg-secondary rounded-md p-3">
-        <FcOrganization size={26} />
+        <div>
+          <FaRegBuilding size={20} className="text-zinc-700" />
+        </div>
         {org.name}
       </AccordionTrigger>
       <AccordionContent className="px-3 mt-2 flex flex-col">
