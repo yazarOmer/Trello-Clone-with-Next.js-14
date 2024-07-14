@@ -21,7 +21,7 @@ export const Sidebar = async ({ orgId }: SidebarProps) => {
           <Plus size={16} className="text-zinc-700" />
         </Button>
       </div>
-      <Accordion type="multiple" className="w-full px-2">
+      <Accordion type="multiple" className="w-full p-2">
         {organizations?.map((org) => (
           <NavItem key={org.id} org={org} orgId={orgId} />
         ))}

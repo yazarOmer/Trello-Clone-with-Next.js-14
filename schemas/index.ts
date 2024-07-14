@@ -36,3 +36,11 @@ export const BoardSchema = z.object({
         required_error: "Image is required",
     })
 })
+
+export const UpdateBoardSchema = z.object({
+    title: z.string().min(1, {
+        message: "Title is required"
+    }),
+    id: z.string(),
+    orgId: z.string()
+})
