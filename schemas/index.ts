@@ -49,3 +49,7 @@ export const DeleteBoardSchema = z.object({
     id: z.string(),
     orgId: z.string()
 })
+
+export const DeleteOrganizationSchema = z.object({
+    orgId: z.string()
+})

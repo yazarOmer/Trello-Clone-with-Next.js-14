@@ -48,7 +48,7 @@ export const BoardOptions = ({ board }: BoardOptionsProps) => {
       </PopoverTrigger>
       <PopoverContent side="bottom" align="end" className="w-48 p-0 py-1">
         <Button
-          onClick={deleteHandle}
+          onClick={() => deleteHandle}
           variant="ghost"
           className="w-full rounded-none"
         >
