@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { ListWithCards } from "@/types";
 import { List } from "@prisma/client";
+import { ListForm } from "./list-form";
 
 interface ListContanierProps {
   data: List[] | undefined;
@@ -12,7 +11,7 @@ export const ListContanier = ({ data }: ListContanierProps) => {
       {data?.map((list) => {
         return <p key={list.id}>{list.title}</p>;
       })}
-      <Button>list form</Button>
+      <ListForm />
     </div>
   );
 };

@@ -40,14 +40,13 @@ export const SelectOrganization = ({
           className="px-4 text-wrap"
         >
           <div className="relative">
-            <Button
+            <div
               onClick={() => deleteHandle(org.id)}
-              variant="ghost"
-              size="icon"
-              className="hidden group-hover:flex absolute top-1 right-1 hover:bg-zinc-300 rounded-full p-0"
+              className="hidden cursor-pointer group-hover:flex absolute top-1 right-1 hover:bg-zinc-300 rounded-full p-2"
             >
               <FaRegTrashAlt size={12} />
-            </Button>
+            </div>
+
             <Link
               href={`/organization/${org.id}`}
               className="w-full h-full flex items-center justify-center text-center"

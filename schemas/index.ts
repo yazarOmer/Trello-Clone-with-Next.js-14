@@ -53,3 +53,11 @@ export const DeleteBoardSchema = z.object({
 export const DeleteOrganizationSchema = z.object({
     orgId: z.string()
 })
+
+export const ListSchema = z.object({
+    title: z.string().min(1, {
+        message: "Title is required"
+    }),
+    orgId: z.string(),
+    boardId: z.string()
+})
