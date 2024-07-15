@@ -8,19 +8,7 @@ import {
 import { ElementRef, useRef } from "react";
 import { Button } from "./ui/button";
 import { X } from "lucide-react";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "./ui/form";
 import { Input } from "./ui/input";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { BoardSchema } from "@/schemas";
-import * as z from "zod";
 import { useParams } from "next/navigation";
 import { useMutation } from "@tanstack/react-query";
 import { createBoard } from "@/actions/create-board";

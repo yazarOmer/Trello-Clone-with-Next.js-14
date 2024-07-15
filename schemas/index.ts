@@ -44,3 +44,8 @@ export const UpdateBoardSchema = z.object({
     id: z.string(),
     orgId: z.string()
 })
+
+export const DeleteBoardSchema = z.object({
+    id: z.string(),
+    orgId: z.string()
+})
