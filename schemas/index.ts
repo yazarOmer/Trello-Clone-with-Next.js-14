@@ -70,3 +70,9 @@ export const UpdateListSchema = z.object({
     boardId: z.string(),
     orgId: z.string()
 })
+
+export const DeleteListSchema = z.object({
+    id: z.string(),
+    boardId: z.string(),
+    orgId: z.string()
+})

@@ -7,6 +7,7 @@ import { useParams } from "next/navigation";
 import { ElementRef, useRef, useState } from "react";
 import { toast } from "sonner";
 import { useOnClickOutside } from "usehooks-ts";
+import { ListOptions } from "./list-options";
 
 interface ListHeaderProps {
   data: List;
@@ -68,7 +69,7 @@ export const ListHeader = ({ data }: ListHeaderProps) => {
   useOnClickOutside(formRef, disableEditing);
 
   return (
-    <div className="pt-2 px-2 text-sm font-semibold flex justify-between items-start gap-x-2">
+    <div className="pt-2 px-2 text-sm font-semibold flex justify-between items-center gap-x-2">
       {isEditing ? (
         <form ref={formRef} action={onSubmit} className="flex-1 px-[2px]">
           <input hidden id="id" name="id" value={data.id} />
@@ -93,6 +94,7 @@ export const ListHeader = ({ data }: ListHeaderProps) => {
           {data.title}
         </div>
       )}
+      <ListOptions data={data} orgId={params.orgId as string} />
     </div>
   );
 };
