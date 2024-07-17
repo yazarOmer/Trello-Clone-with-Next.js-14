@@ -76,3 +76,12 @@ export const DeleteListSchema = z.object({
     boardId: z.string(),
     orgId: z.string()
 })
+
+export const CreateCardSchema = z.object({
+    title: z.string().min(1, {
+        message: "Title is required"
+    }),
+    boardId: z.string(),
+    listId: z.string(),
+    orgId: z.string()
+})

@@ -5,7 +5,7 @@ import { UpdateListSchema } from "@/schemas"
 import { revalidatePath } from "next/cache"
 import * as z from "zod"
 
-export const updateList = async (data: z.infer<typeof UpdateListSchema>) => {
+export const updateList = async (data: z.infer<typeof UpdateListSchema>): Promise<any> => {
     const { title, id, boardId, orgId } = data
     
     let list

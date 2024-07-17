@@ -1,9 +1,10 @@
 import { List } from "@prisma/client";
 import { ListForm } from "./list-form";
 import { ListItem } from "./list-item";
+import { ListWithCards } from "@/types";
 
 interface ListContanierProps {
-  data: List[] | undefined;
+  data: ListWithCards[] | undefined;
 }
 
 export const ListContanier = ({ data }: ListContanierProps) => {
