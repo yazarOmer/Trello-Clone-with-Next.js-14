@@ -28,9 +28,9 @@ This app is a fully functional, user-friendly task management app. Inspired by t
 
 [@prisma](https://x.com/prisma) for database ORM Tool
 
-[@shadcn](https://x.com/shadcn) for component library
+[@shadcn](https://ui.shadcn.com/) for component library
 
-[@tailwindcss](https://x.com/tailwindcss) for CSS library
+[@tailwindcss](https://tailwindcss.com/) for CSS library
 
 [@react-hook-form](https://www.react-hook-form.com/) and [@zod](https://zod.dev/) for form validation
 
