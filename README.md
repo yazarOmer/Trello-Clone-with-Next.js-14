@@ -1,3 +1,28 @@
+# Tasker
+
+### Full Stack Task Management App Using Next.js 14
+
+This app is a fully functional, user-friendly task management app. Inspired by the Trello app. Users can register and login the website using credentials. This app also supports Google or Github authentication. Users can create their own organizations, boards, lists and cards and users can manage them.
+
+## Features and Tech Stack
+
+:lock: Authentication (incl. Google and GitHub providers) using NextAuth v5
+:framed_picture: Unsplash API for random images
+:clipboard: Board creation
+:clipboard: Board rename and delete
+:spiral_notepad: List creation
+:spiral_notepad: List rename, delete
+:scroll: Card creation
+:scroll: Card description, rename, delete
+:white_check_mark: Landing page
+
+[@nextjs](https://nextjs.org/) for full stack React.js framework
+[@prisma](https://x.com/prisma) for database ORM Tool
+[@shadcn](https://x.com/shadcn) for component library
+[@tailwindcss](https://x.com/tailwindcss) for CSS library
+[@react-hook-form](https://www.react-hook-form.com/) and [@zod](https://zod.dev/) for form validation
+[@sonner](https://sonner.emilkowal.ski/) for toast notification
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
