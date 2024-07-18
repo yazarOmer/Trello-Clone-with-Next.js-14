@@ -7,13 +7,21 @@ This app is a fully functional, user-friendly task management app. Inspired by t
 ## Features and Tech Stack
 
 :lock: Authentication (incl. Google and GitHub providers) using NextAuth v5
+
 :framed_picture: Unsplash API for random images
+
 :clipboard: Board creation
+
 :clipboard: Board rename and delete
+
 :spiral_notepad: List creation
+
 :spiral_notepad: List rename, delete
+
 :scroll: Card creation
+
 :scroll: Card description, rename, delete
+
 :white_check_mark: Landing page
 
 [@nextjs](https://nextjs.org/) for full stack React.js framework
