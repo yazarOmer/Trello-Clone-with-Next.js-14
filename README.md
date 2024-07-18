@@ -38,6 +38,40 @@ This app is a fully functional, user-friendly task management app. Inspired by t
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Images
+
+#### Login Page
+
+![Login Page](public/login.png)
+
+#### Register Page
+
+![Register Page](public/register.png)
+
+#### Select Organization Page
+
+![Select Organization Page](public/select-org.png)
+
+#### Create Organization Page
+
+![Create Organization Page](public/create-org.png)
+
+#### Select Board Page
+
+![Select Board Page](public/select-board.png)
+
+#### Create Board Page
+
+![Create  Board Page](public/create-board.png)
+
+#### Board Page
+
+![Board Page](public/board.png)
+
+#### Create List Page
+
+![Create  List Page](public/create-list.png)
+
 ## Getting Started
 
 First, run the development server:
