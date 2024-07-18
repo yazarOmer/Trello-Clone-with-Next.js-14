@@ -17,10 +17,15 @@ This app is a fully functional, user-friendly task management app. Inspired by t
 :white_check_mark: Landing page
 
 [@nextjs](https://nextjs.org/) for full stack React.js framework
+
 [@prisma](https://x.com/prisma) for database ORM Tool
+
 [@shadcn](https://x.com/shadcn) for component library
+
 [@tailwindcss](https://x.com/tailwindcss) for CSS library
+
 [@react-hook-form](https://www.react-hook-form.com/) and [@zod](https://zod.dev/) for form validation
+
 [@sonner](https://sonner.emilkowal.ski/) for toast notification
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
