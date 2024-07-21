@@ -16,8 +16,8 @@ export const UserButton = async () => {
       <PopoverTrigger>
         <Image
           src={session?.user?.image || userImage}
-          width={48}
-          height={48}
+          width={32}
+          height={32}
           alt="User image"
           className="rounded-full"
         />

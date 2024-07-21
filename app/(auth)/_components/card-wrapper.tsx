@@ -1,3 +1,4 @@
+"use client";
 import {
   Card,
   CardContent,
@@ -11,6 +12,8 @@ import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
 import logo from "@/public/logo.svg";
+import { signIn } from "next-auth/react";
+import { DEFAULT_LOGIN_REDIRECT } from "@/routes";
 
 type CardWrapperProps = {
   children: React.ReactNode;
@@ -34,6 +37,12 @@ export const CardWrapper = ({
   footerAction,
   footerHref,
 }: CardWrapperProps) => {
+  const onClick = (provider: "google" | "github") => {
+    signIn(provider, {
+      callbackUrl: DEFAULT_LOGIN_REDIRECT,
+    });
+  };
+
   return (
     <Card className="w-[450px] flex flex-col items-center px-5">
       <CardHeader className="flex flex-col items-center gap-y-2">
@@ -60,11 +69,19 @@ export const CardWrapper = ({
             or continue with
           </span>
         </div>
-        <Button variant="outline" className="w-full flex items-center gap-x-2">
+        <Button
+          onClick={() => onClick("google")}
+          variant="outline"
+          className="w-full flex items-center gap-x-2"
+        >
           <FcGoogle />
           Continue with Google
         </Button>
-        <Button variant="outline" className="w-full flex items-center gap-x-2">
+        <Button
+          onClick={() => onClick("github")}
+          variant="outline"
+          className="w-full flex items-center gap-x-2"
+        >
           <FaGithub />
           Continue with GitHub
         </Button>
